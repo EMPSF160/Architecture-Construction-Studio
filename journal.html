@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal | Architecture & Construction Studio</title>
+  <meta name="description" content="Essays, field notes, material experiments, and architectural research publications by our studio.">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="header-transparent-dark">
+
+  <!-- ==================== GLOBAL NAVBAR ==================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="navbar-inner">
+        <a href="index.html" class="nav-brand-left" aria-label="Studio Home">
+          <span class="brand-dot"></span>
+          <span>STUDIO / ARCHITECTURE</span>
+        </a>
+
+        <div class="nav-center-statement">
+          FORM / MATERIAL / STRUCTURE
+        </div>
+
+        <div class="nav-right-desktop">
+          <nav class="nav-links-list" aria-label="Desktop Navigation">
+            <a href="projects.html" class="nav-link-item">Projects</a>
+            <a href="journal.html" class="nav-link-item active">Journal</a>
+            <a href="contact.html" class="nav-link-item">Contact</a>
+          </nav>
+          <button class="menu-trigger" id="menu-trigger" aria-label="Open Navigation Menu" aria-expanded="false">
+            <span class="hamburger-lines">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== FULLSCREEN ARCHITECTURAL DRAWER ==================== -->
+  <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Navigation Menu">
+    <div class="drawer-nav-grid">
+      <div class="drawer-links-primary">
+        <a href="index.html" class="drawer-link"><span class="num">01</span><span>Home</span></a>
+        <a href="studio.html" class="drawer-link"><span class="num">02</span><span>Studio</span></a>
+        <a href="architecture.html" class="drawer-link"><span class="num">03</span><span>Architecture</span></a>
+        <a href="construction.html" class="drawer-link"><span class="num">04</span><span>Construction</span></a>
+        <a href="projects.html" class="drawer-link"><span class="num">05</span><span>Projects</span></a>
+        <a href="journal.html" class="drawer-link active"><span class="num">06</span><span>Journal</span></a>
+        <a href="contact.html" class="drawer-link"><span class="num">07</span><span>Contact</span></a>
+      </div>
+      <div class="drawer-secondary-info">
+        <div>
+          <div class="drawer-col-title">Studio Location</div>
+          <div class="drawer-address-block">
+            <p>44 Harrington Road, Chetpet</p>
+            <p>Chennai, Tamil Nadu 600031</p>
+            <p>India</p>
+          </div>
+        </div>
+        <div style="margin-top: 2rem;">
+          <div class="drawer-col-title">Direct Inquiries</div>
+          <div class="drawer-contact-block">
+            <a href="mailto:studio@form-material-structure.com">studio@form-material-structure.com</a>
+            <a href="tel:+914428361099">+91 (044) 2836 1099</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-bottom-bar">
+      <p>FORM. MATERIAL. STRUCTURE. — ARCHITECTURE & CONSTRUCTION PRACTICE</p>
+      <p>&copy; 2027 STUDIO. ALL RIGHTS RESERVED.</p>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- ==================== JOURNAL HERO ==================== -->
+    <section class="hero-wrapper" id="journal-hero" style="min-height: 70vh;">
+      <div class="hero-bg-media">
+        <img src="image/pexels-ishahidsultan-7055821.jpg" alt="Architectural publication and essays" fetchpriority="high">
+      </div>
+      <div class="hero-overlay-dark"></div>
+      
+      <div class="container hero-content">
+        <span class="meta-label" style="color: var(--limestone-light);">Studio Publication</span>
+        <h1 class="hero-massive-title" style="font-size: clamp(3rem, 8.5vw, 7.5rem);">
+          THE JOURNAL<br>
+          <span class="accent-word">CRITIQUE & CRAFT</span>
+        </h1>
+        <div class="hero-sub-row">
+          <p class="hero-sub-text">
+            Architecture / Material / Construction / Culture / Research
+          </p>
+          <div class="scroll-indicator">
+            <span>READ ESSAYS</span>
+            <div class="scroll-indicator-line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LEAD FEATURED ARTICLE ==================== -->
+    <section class="section section-paper" id="lead-article" style="padding-bottom: 2rem;">
+      <div class="container">
+        <div class="featured-project-container" onclick="openArticleModal('weight-of-stone')" style="background-color: var(--ink); cursor: pointer;">
+          <div class="featured-media" style="height: 520px;">
+            <img src="image/pexels-ishahidsultan-7055821.jpg" alt="The Weight of Stone Monograph">
+          </div>
+          <div class="featured-info">
+            <span class="meta-label" style="color: var(--oxide-light);">Lead Feature Essay</span>
+            <h2 class="featured-title" style="font-size: clamp(2rem, 3.5vw, 3rem);">The Weight of Stone: Tactility in Modern Monoliths</h2>
+            <p class="header-desc" style="margin-bottom: 1.5rem; color: rgba(244,241,234,0.85);">
+              Why contemporary digital architecture requires a renewed confrontation with raw geological weight, thermal inertia, and ancient masonry crafts.
+            </p>
+            <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border-subtle-dark); padding-top: 1.25rem;">
+              <span style="font-size: 0.78rem; letter-spacing: 0.15em; color: var(--limestone); text-transform: uppercase;">OCTOBER 2026 / 7 MIN READ</span>
+              <button class="btn btn-oxide" onclick="event.stopPropagation(); openArticleModal('weight-of-stone')">Read Monograph <i data-lucide="arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDITORIAL ARTICLE GRID (EQUAL CARD SIZES) ==================== -->
+    <section class="section section-paper" id="journal-grid">
+      <div class="container">
+        <div class="header-grid" style="margin-bottom: 3.5rem;">
+          <div>
+            <span class="meta-label">Selected Essays & Field Notes</span>
+            <h2>Architectural Discourse</h2>
+          </div>
+          <p class="header-desc">
+            Dispatches from our construction sites, bioclimatic simulations, and material testing laboratory.
+          </p>
+        </div>
+
+        <div class="card-grid card-grid-3">
+          <!-- Article 1 -->
+          <article class="arch-card" onclick="openArticleModal('drawing-to-structure')">
+            <div class="arch-card-media">
+              <img src="image/pexels-sunny-li-2152532581-38532228.jpg" alt="Drawing to structure" loading="lazy">
+              <span class="arch-card-badge">Construction</span>
+            </div>
+            <div class="arch-card-body">
+              <div>
+                <div class="arch-card-meta-top">
+                  <span>FIELD NOTE</span>
+                  <span>SEP 2026</span>
+                </div>
+                <h3 class="arch-card-title">From Drawing to Structure: The Direct Studio-Site Bridge</h3>
+                <p class="arch-card-desc">How eliminating the barrier between the drafting table and the concrete pour produces buildings of uncompromised tectonic precision.</p>
+              </div>
+              <div class="arch-card-footer">
+                <span class="btn-link">Read Field Note</span>
+                <span style="font-size: 0.75rem; color: var(--oxide);">5 MIN READ</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="arch-card" onclick="openArticleModal('space-made-visible')">
+            <div class="arch-card-media">
+              <img src="image/pexels-njeromin-12314551.jpg" alt="Light as Material" loading="lazy">
+              <span class="arch-card-badge">Architecture</span>
+            </div>
+            <div class="arch-card-body">
+              <div>
+                <div class="arch-card-meta-top">
+                  <span>THEORY</span>
+                  <span>AUG 2026</span>
+                </div>
+                <h3 class="arch-card-title">Light as Material: Carving Void in Dense Contexts</h3>
+                <p class="arch-card-desc">Exploring daylight not as accidental illumination, but as a primary structural element that sculpts space across daily cycles.</p>
+              </div>
+              <div class="arch-card-footer">
+                <span class="btn-link">Read Theory</span>
+                <span style="font-size: 0.75rem; color: var(--oxide);">6 MIN READ</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="arch-card" onclick="openArticleModal('bioclimatic-vernacular')">
+            <div class="arch-card-media">
+              <img src="image/pexels-wal_-172619-2156618639-38867950.jpg" alt="Bioclimatic Geometry" loading="lazy">
+              <span class="arch-card-badge">Research</span>
+            </div>
+            <div class="arch-card-body">
+              <div>
+                <div class="arch-card-meta-top">
+                  <span>RESEARCH</span>
+                  <span>JUL 2026</span>
+                </div>
+                <h3 class="arch-card-title">Bioclimatic Geometry: Passive Cooling in Tropics</h3>
+                <p class="arch-card-desc">Synthesizing regional courtyard wisdom with computational fluid dynamics to achieve zero-energy thermal comfort.</p>
+              </div>
+              <div class="arch-card-footer">
+                <span class="btn-link">Read Research</span>
+                <span style="font-size: 0.75rem; color: var(--oxide);">8 MIN READ</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 4 -->
+          <article class="arch-card" onclick="openArticleModal('concrete-aggregate-studies')">
+            <div class="arch-card-media">
+              <img src="image/pexels-quentin-ecrepont-1148362-3818947.jpg" alt="Concrete Aggregates" loading="lazy">
+              <span class="arch-card-badge">Material</span>
+            </div>
+            <div class="arch-card-body">
+              <div>
+                <div class="arch-card-meta-top">
+                  <span>EXPERIMENT</span>
+                  <span>JUN 2026</span>
+                </div>
+                <h3 class="arch-card-title">Aggregates & Texture: Form-work Craft</h3>
+                <p class="arch-card-desc">Documenting our experimentation with reclaimed timber formwork grains and pozzolanic mineral admixtures.</p>
+              </div>
+              <div class="arch-card-footer">
+                <span class="btn-link">Read Experiment</span>
+                <span style="font-size: 0.75rem; color: var(--oxide);">4 MIN READ</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 5 -->
+          <article class="arch-card" onclick="openArticleModal('structural-clarity')">
+            <div class="arch-card-media">
+              <img src="image/sakulich-copper-1081825_1920.jpg" alt="Exposed Joint" loading="lazy">
+              <span class="arch-card-badge">Structure</span>
+            </div>
+            <div class="arch-card-body">
+              <div>
+                <div class="arch-card-meta-top">
+                  <span>CRITIQUE</span>
+                  <span>MAY 2026</span>
+                </div>
+                <h3 class="arch-card-title">Tectonic Clarity: The Art of the Exposed Joint</h3>
+                <p class="arch-card-desc">Why the intersection between distinct materials should never be hidden behind plaster trims or caulking.</p>
+              </div>
+              <div class="arch-card-footer">
+                <span class="btn-link">Read Critique</span>
+                <span style="font-size: 0.75rem; color: var(--oxide);">5 MIN READ</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 6 -->
+          <article class="arch-card" onclick="openArticleModal('weight-of-stone')">
+            <div class="arch-card-media">
+              <img src="image/pexels-felix-haumann-1938529-10143241.jpg" alt="Studio praxis" loading="lazy">
+              <span class="arch-card-badge">Studio</span>
+            </div>
+            <div class="arch-card-body">
+              <div>
+                <div class="arch-card-meta-top">
+                  <span>DISPATCH</span>
+                  <span>APR 2026</span>
+                </div>
+                <h3 class="arch-card-title">The Physical Model as a Cognitive Tool</h3>
+                <p class="arch-card-desc">How carving basswood and casting plaster reveals spatial truths that digital wireframes conceal.</p>
+              </div>
+              <div class="arch-card-footer">
+                <span class="btn-link">Read Dispatch</span>
+                <span style="font-size: 0.75rem; color: var(--oxide);">4 MIN READ</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SPECIAL ESSAY FEATURE ==================== -->
+    <section class="section section-dark" id="monograph-spotlight">
+      <div class="container">
+        <div style="text-align: center; max-width: 820px; margin: 0 auto;">
+          <span class="meta-label no-line" style="color: var(--oxide-light); justify-content: center;">Special Publication</span>
+          <h2 style="font-size: clamp(2.4rem, 5vw, 4.5rem); margin-bottom: 2rem;">THE WEIGHT OF STONE</h2>
+          <p class="lead-p" style="color: rgba(244,241,234,0.8); margin-bottom: 2.5rem; line-height: 1.8;">
+            “When we build with stone, we do not merely erect partitions; we engage geological time. Stone absorbs the radiant solar heat of the day and gently releases ambient coolness across deep courtyard colonnades.”
+          </p>
+          <button class="btn btn-oxide" onclick="openArticleModal('weight-of-stone')">
+            Read The Full Monograph <i data-lucide="book-open"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== JOURNAL READER MODAL ==================== -->
+  <div class="project-modal" id="journal-modal" role="dialog" aria-modal="true" aria-label="Article Reader">
+    <button class="modal-close-btn journal-modal-close" aria-label="Close Article Modal"><i data-lucide="x"></i></button>
+    <div class="modal-content-wrapper" style="max-width: 920px;">
+      <div class="meta-label article-modal-cat" style="color: var(--oxide-light);">MATERIAL / OCT 2026</div>
+      <h2 class="article-modal-title" style="font-size: clamp(2.2rem, 4.5vw, 3.8rem); margin-bottom: 2rem;"></h2>
+      <div style="width: 100%; aspect-ratio: 16/9; overflow: hidden; margin-bottom: 2.5rem; background: var(--limestone);">
+        <img src="" alt="" class="article-modal-img" style="width:100%; height:100%; object-fit: cover;">
+      </div>
+      <div class="article-modal-body" style="font-size: 1.1rem; line-height: 1.8; color: rgba(244,241,234,0.85);">
+        <!-- Content populated by main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MONOLITHIC FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-statement-massive">
+        WE BUILD IDEAS <span class="oxide-text">INTO PLACE.</span>
+      </div>
+
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-title">FORM / MATERIAL / STRUCTURE</div>
+          <div class="meta-label no-line" style="margin-bottom: 0.75rem;">ARCHITECTURE & CONSTRUCTION PRACTICE</div>
+          <p class="footer-tagline">
+            Designing and constructing monolithic structures with raw material weight and tectonic clarity.
+          </p>
+          <div class="social-links-row" style="margin-top: 1.25rem;">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.334 1.357-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Practice</div>
+          <nav class="footer-links-list">
+            <a href="studio.html">Studio Manifesto</a>
+            <a href="architecture.html">Disciplines</a>
+            <a href="construction.html">Construction Craft</a>
+            <a href="studio.html#timeline">Timeline 2018–2027</a>
+          </nav>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Selected Index</div>
+          <nav class="footer-links-list">
+            <a href="projects.html">House of Limestone</a>
+            <a href="projects.html">Concrete Courtyard</a>
+            <a href="projects.html">North Pavilion</a>
+            <a href="projects.html">Civic Archive</a>
+          </nav>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Coordinates</div>
+          <div class="footer-links-list">
+            <span style="font-size: 0.85rem; color: rgba(244,241,234,0.7);">44 Harrington Road, Chennai</span>
+            <a href="mailto:studio@form-material-structure.com">studio@form-material-structure.com</a>
+            <a href="tel:+914428361099">+91 (044) 2836 1099</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div>&copy; 2027 ARCHITECTURE & CONSTRUCTION STUDIO. ALL RIGHTS RESERVED.</div>
+        <button class="footer-back-to-top" aria-label="Scroll back to top">
+          <span>BACK TO TOP</span>
+          <i data-lucide="arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="js/projects-data.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+/* ==========================================================================
+   ARCHITECTURE & CONSTRUCTION STUDIO — RESPONSIVE DESIGN SYSTEM
+   STRICT BREAKPOINT RULES: 320px, 375px, 425px, 576px, 768px, 834px, 900px, 1024px, 1200px+
+   ========================================================================== */
+
+/* --- TABLET & BELOW: 1024PX AND LESS STRICT LOGO + HAMBURGER RULE --- */
+@media (max-width: 1024px) {
+  /* Center Statement and Desktop navigation links hidden */
+  .nav-center-statement {
+    display: none !important;
+  }
+
+  .nav-links-list {
+    display: none !important;
+  }
+
+  /* Hamburger menu pinned to top-right corner on same row as logo */
+  .nav-right-desktop {
+    gap: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+  }
+
+  .menu-trigger {
+    display: flex !important;
+    padding: 0.5rem !important;
+  }
+
+  /* Container width & padding adjustments */
+  :root {
+    --container-padding: clamp(1.25rem, 3.5vw, 2.5rem);
+    --header-height: 72px;
+  }
+
+  /* Grids: 3-column & 4-column convert to 2-column */
+  .card-grid-3,
+  .card-grid-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.75rem !important;
+  }
+
+  .material-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+
+  .material-card {
+    height: 400px !important;
+  }
+
+  .philosophy-grid {
+    grid-template-columns: 1fr !important;
+    border-top: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .philosophy-col {
+    border-right: none !important;
+    border-bottom: 1px solid var(--border-subtle) !important;
+    min-height: auto !important;
+    padding: 2.25rem 1rem !important;
+  }
+
+  .philosophy-col:last-child {
+    border-bottom: none !important;
+  }
+
+  .approach-sequence {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+
+  .process-flow-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+
+  .header-grid,
+  .page-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+    text-align: center !important;
+  }
+
+  .header-desc {
+    margin: 0 auto !important;
+  }
+
+  .featured-project-container {
+    grid-template-columns: 1fr !important;
+    min-height: auto !important;
+  }
+
+  .featured-media {
+    height: 380px !important;
+  }
+
+  .featured-info {
+    padding: 2.25rem 1.5rem !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .featured-tags {
+    justify-content: center !important;
+  }
+
+  /* Modal layout for 1024px and tablet */
+  .modal-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .drawer-nav-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+
+  .drawer-secondary-info {
+    border-left: none !important;
+    border-top: 1px solid var(--border-subtle-dark) !important;
+    padding-left: 0 !important;
+    padding-top: 2rem !important;
+    text-align: center !important;
+  }
+
+  /* Footer 1024 / Tablet layout */
+  .footer-grid {
+    grid-template-columns: 1.5fr 1fr 1fr !important;
+    gap: 2.5rem !important;
+    text-align: center !important;
+  }
+
+  .footer-links-list {
+    align-items: center !important;
+  }
+
+  .footer-tagline {
+    margin: 0 auto !important;
+  }
+
+  /* Contact page 1024 */
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+  }
+
+  .contact-info-block {
+    text-align: center !important;
+    align-items: center !important;
+  }
+}
+
+/* --- TABLET / 768PX & 834PX BREAKPOINT --- */
+@media (max-width: 834px) {
+  :root {
+    --container-padding: 1.5rem;
+    --header-height: 68px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .approach-sequence {
+    grid-template-columns: 1fr !important;
+  }
+
+  .process-flow-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .three-signature-container {
+    height: 420px !important;
+  }
+
+  .hero-sub-row {
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 1.25rem;
+  }
+
+  .hero-sub-text {
+    text-align: center !important;
+  }
+
+  .project-list-row {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 1rem !important;
+  }
+}
+
+/* --- MOBILE / 576PX & BELOW BREAKPOINT --- */
+@media (max-width: 576px) {
+  :root {
+    --container-padding: 1.15rem;
+    --header-height: 64px;
+  }
+
+  /* Equal sizing for cards in 1-column layout */
+  .card-grid-2,
+  .card-grid-3,
+  .card-grid-4,
+  .team-grid,
+  .material-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .material-card {
+    height: 340px !important;
+  }
+
+  .arch-card-media {
+    aspect-ratio: 4 / 3 !important;
+  }
+
+  .team-media {
+    aspect-ratio: 4 / 5 !important;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .footer-bottom-row {
+    flex-direction: column-reverse;
+    align-items: center !important;
+    gap: 1.25rem;
+    text-align: center !important;
+  }
+
+  .process-flow-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Buttons on mobile */
+  .btn {
+    width: 100%;
+    padding: 0.95rem 1.5rem;
+  }
+
+  .featured-media {
+    height: 280px !important;
+  }
+
+  .modal-close-btn {
+    top: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+  }
+
+  .modal-swiper-container {
+    height: 280px !important;
+  }
+
+  /* Ensure massive typography never clips on 320px/375px */
+  .hero-massive-title {
+    font-size: clamp(2.4rem, 11vw, 3.8rem) !important;
+    word-break: break-word;
+  }
+
+  .footer-statement-massive {
+    font-size: clamp(2rem, 9vw, 3.2rem) !important;
+  }
+
+  .page-hero-title {
+    font-size: clamp(2.2rem, 8.5vw, 3.4rem) !important;
+  }
+
+  .three-signature-container {
+    height: 360px !important;
+  }
+
+  .construction-status-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .construction-status-table {
+    min-width: 540px;
+  }
+}
+
+/* --- SMALL MOBILE / 320PX — 375PX OPTIMIZATION --- */
+@media (max-width: 375px) {
+  :root {
+    --container-padding: 0.95rem;
+  }
+
+  .nav-brand-left {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+  }
+
+  .drawer-link {
+    font-size: 1.85rem !important;
+  }
+
+  .hero-massive-title {
+    font-size: 2.1rem !important;
+  }
+
+  .btn {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+  }
+}
+
+/* --- LARGE SCREENS / 1440PX — 2560PX+ --- */
+@media (min-width: 1440px) {
+  .hero-massive-title {
+    font-size: 8rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  :root {
+    --container-max-width: 2000px;
+    --container-padding: 5rem;
+  }
+}

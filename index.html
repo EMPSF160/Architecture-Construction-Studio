@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architecture & Construction Studio | Form. Material. Structure.</title>
+  <meta name="description" content="Contemporary architectural practice and construction studio exploring form, material weight, and tectonic precision in the built environment.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="header-transparent-dark">
+
+  <!-- ==================== GLOBAL NAVBAR ==================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="navbar-inner">
+        <!-- Brand Left -->
+        <a href="index.html" class="nav-brand-left" aria-label="Studio Home">
+          <span class="brand-dot"></span>
+          <span>STUDIO / ARCHITECTURE</span>
+        </a>
+
+        <!-- Center Editorial Statement -->
+        <div class="nav-center-statement">
+          FORM / MATERIAL / STRUCTURE
+        </div>
+
+        <!-- Desktop Right Nav & Hamburger Trigger -->
+        <div class="nav-right-desktop">
+          <nav class="nav-links-list" aria-label="Desktop Navigation">
+            <a href="projects.html" class="nav-link-item">Projects</a>
+            <a href="journal.html" class="nav-link-item">Journal</a>
+            <a href="contact.html" class="nav-link-item">Contact</a>
+          </nav>
+          <button class="menu-trigger" id="menu-trigger" aria-label="Open Navigation Menu" aria-expanded="false">
+            <span class="hamburger-lines">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== FULLSCREEN ARCHITECTURAL DRAWER ==================== -->
+  <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Navigation Menu">
+    <div class="drawer-nav-grid">
+      <div class="drawer-links-primary">
+        <a href="index.html" class="drawer-link active"><span class="num">01</span><span>Home</span></a>
+        <a href="studio.html" class="drawer-link"><span class="num">02</span><span>Studio</span></a>
+        <a href="architecture.html" class="drawer-link"><span class="num">03</span><span>Architecture</span></a>
+        <a href="construction.html" class="drawer-link"><span class="num">04</span><span>Construction</span></a>
+        <a href="projects.html" class="drawer-link"><span class="num">05</span><span>Projects</span></a>
+        <a href="journal.html" class="drawer-link"><span class="num">06</span><span>Journal</span></a>
+        <a href="contact.html" class="drawer-link"><span class="num">07</span><span>Contact</span></a>
+      </div>
+      <div class="drawer-secondary-info">
+        <div>
+          <div class="drawer-col-title">Studio Location</div>
+          <div class="drawer-address-block">
+            <p>44 Harrington Road, Chetpet</p>
+            <p>Chennai, Tamil Nadu 600031</p>
+            <p>India</p>
+          </div>
+        </div>
+        <div style="margin-top: 2rem;">
+          <div class="drawer-col-title">Direct Inquiries</div>
+          <div class="drawer-contact-block">
+            <a href="mailto:studio@form-material-structure.com">studio@form-material-structure.com</a>
+            <a href="tel:+914428361099">+91 (044) 2836 1099</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-bottom-bar">
+      <p>FORM. MATERIAL. STRUCTURE. — ARCHITECTURE & CONSTRUCTION PRACTICE</p>
+      <p>&copy; 2027 STUDIO. ALL RIGHTS RESERVED.</p>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-wrapper" id="home-hero">
+      <div class="hero-bg-media">
+        <img src="image/pexels-83080092-8922815.jpg" alt="Monolithic travertine and concrete architecture" fetchpriority="high">
+      </div>
+      <div class="hero-overlay-dark"></div>
+      
+      <div class="container hero-content">
+        <div class="meta-label" style="color: var(--limestone-light);">ARCHITECTURE + CONSTRUCTION STUDIO</div>
+        <h1 class="hero-massive-title">
+          FORM.<br>
+          <span class="accent-word">MATERIAL.</span><br>
+          STRUCTURE.
+        </h1>
+        <div class="hero-sub-row">
+          <p class="hero-sub-text">
+            A contemporary practice synthesizing monolithic spatial purity, tectonic precision, and material permanence.
+          </p>
+          <div class="scroll-indicator">
+            <span>EXPLORE PRACTICE</span>
+            <div class="scroll-indicator-line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDITORIAL INTRO ==================== -->
+    <section class="section section-paper" id="home-intro">
+      <div class="container">
+        <div class="header-grid">
+          <div>
+            <span class="meta-label">Studio Statement</span>
+            <h2>We shape space through material, structure and light.</h2>
+          </div>
+          <div>
+            <p class="lead-p header-desc">
+              Architecture is not an abstract exercise in geometry; it is a physical encounter between gravity, geological matter, and the human senses. We bridge the gulf between drawing table and construction site.
+            </p>
+            <div style="margin-top: 1.75rem;">
+              <a href="studio.html" class="btn btn-secondary">Read Studio Manifesto <i data-lucide="arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED PROJECT SHOWCASE ==================== -->
+    <section class="section section-dark" style="padding-top: 0; padding-bottom: 0;">
+      <div class="featured-project-container" data-cursor="project" onclick="openProjectModal('house-of-limestone')">
+        <div class="featured-media">
+          <img src="image/pexels-83080092-8922815.jpg" alt="House of Limestone Chennai">
+        </div>
+        <div class="featured-info">
+          <div class="featured-num">01</div>
+          <span class="meta-label" style="color: var(--oxide-light);">Featured Commission</span>
+          <h2 class="featured-title">House of Limestone</h2>
+          <div class="featured-tags">
+            <span class="featured-tag">Chennai / India</span>
+            <span class="featured-tag">2027</span>
+            <span class="featured-tag">Residential</span>
+            <span class="featured-tag">Limestone / Concrete</span>
+          </div>
+          <p class="header-desc" style="margin-bottom: 2rem;">
+            A monolithic dwelling sculpted from porous regional limestone and board-formed fair-face concrete, designed around deep shaded colonnades and rainwater courtyards.
+          </p>
+          <div>
+            <button class="btn btn-oxide" onclick="event.stopPropagation(); openProjectModal('house-of-limestone')">
+              Experience Case Study <i data-lucide="arrow-up-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PHILOSOPHY TRIPTYCH ==================== -->
+    <section class="section section-paper" id="philosophy">
+      <div class="container">
+        <div class="section-header">
+          <span class="meta-label">Core Philosophy</span>
+          <h2>The Tectonic Triad</h2>
+        </div>
+        <div class="philosophy-grid">
+          <div class="philosophy-col">
+            <div>
+              <div class="philosophy-num">01</div>
+              <h3 class="philosophy-title">FORM</h3>
+            </div>
+            <p class="philosophy-desc">
+              Space, proportion and volume. We compose volumetric mass to capture daylight, frame natural thresholds, and orchestrate atmospheric transitions.
+            </p>
+          </div>
+          <div class="philosophy-col">
+            <div>
+              <div class="philosophy-num">02</div>
+              <h3 class="philosophy-title">MATERIAL</h3>
+            </div>
+            <p class="philosophy-desc">
+              Texture, weight and atmosphere. We honor the raw physical integrity of lime, raw basalt, exposed aggregates, and aged timber without synthetic veneers.
+            </p>
+          </div>
+          <div class="philosophy-col">
+            <div>
+              <div class="philosophy-num">03</div>
+              <h3 class="philosophy-title">STRUCTURE</h3>
+            </div>
+            <p class="philosophy-desc">
+              Precision, construction and permanence. Every load path is expressed with architectural clarity, turning engineering honesty into spatial poetry.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== THREE.JS SIGNATURE 3D FEATURE ==================== -->
+    <section class="three-signature-container" id="three-feature">
+      <div id="three-canvas-container"></div>
+      <div class="three-overlay-text">
+        <div class="three-tag">Signature Tectonic Study</div>
+        <h3 class="three-title">Spatial Volume & Wireframe Grid</h3>
+        <p class="three-desc">Interactive structural wireframe responsive to cursor and scroll movement, demonstrating modular pavilion proportions.</p>
+      </div>
+    </section>
+
+    <!-- ==================== MATERIAL STUDIES INTERACTION ==================== -->
+    <section class="section section-paper-alt" id="materials-preview">
+      <div class="container">
+        <div class="header-grid" style="margin-bottom: 3rem;">
+          <div>
+            <span class="meta-label">Material Research</span>
+            <h2>Substance & Tactility</h2>
+          </div>
+          <p class="header-desc">
+            Our material laboratory tests aggregate textures, lime wash breathability, and joinery tolerances to create enduring envelopes.
+          </p>
+        </div>
+
+        <div class="material-grid">
+          <!-- Material 1: Limestone -->
+          <div class="material-card" data-cursor="explore">
+            <div class="material-card-bg">
+              <img src="image/pexels-ishahidsultan-7055821.jpg" alt="Limestone texture detail" loading="lazy">
+            </div>
+            <div class="material-card-overlay"></div>
+            <div class="material-card-content">
+              <span class="material-tag">Stone</span>
+              <h4 class="material-title">Porous Limestone</h4>
+              <p class="material-specs">Hand-dressed compressive masonry with natural thermal lag properties.</p>
+            </div>
+          </div>
+
+          <!-- Material 2: Raw Concrete -->
+          <div class="material-card" data-cursor="explore">
+            <div class="material-card-bg">
+              <img src="image/pexels-adrien-olichon-1257089-3137047.jpg" alt="Raw board-formed concrete" loading="lazy">
+            </div>
+            <div class="material-card-overlay"></div>
+            <div class="material-card-content">
+              <span class="material-tag">Concrete</span>
+              <h4 class="material-title">Board-Formed Concrete</h4>
+              <p class="material-specs">Slag-blend matrix retaining the rich grain of rough-sawn pine molds.</p>
+            </div>
+          </div>
+
+          <!-- Material 3: Reclaimed Timber -->
+          <div class="material-card" data-cursor="explore">
+            <div class="material-card-bg">
+              <img src="image/pexels-felix-haumann-1938529-10143241.jpg" alt="Architectural timber trusses" loading="lazy">
+            </div>
+            <div class="material-card-overlay"></div>
+            <div class="material-card-content">
+              <span class="material-tag">Timber</span>
+              <h4 class="material-title">Teak & Glulam</h4>
+              <p class="material-specs">Precision mortise-and-tenon spans seasoned for tropical climates.</p>
+            </div>
+          </div>
+
+          <!-- Material 4: Weathering Steel -->
+          <div class="material-card" data-cursor="explore">
+            <div class="material-card-bg">
+              <img src="image/sakulich-copper-1081825_1920.jpg" alt="Oxidized architectural steel" loading="lazy">
+            </div>
+            <div class="material-card-overlay"></div>
+            <div class="material-card-content">
+              <span class="material-tag">Steel</span>
+              <h4 class="material-title">Oxidized Steel</h4>
+              <p class="material-specs">Self-healing patina forming an impervious barrier against coastal moisture.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SELECTED PROJECTS PREVIEW ==================== -->
+    <section class="section section-paper" id="selected-projects">
+      <div class="container">
+        <div class="header-grid" style="margin-bottom: 3.5rem;">
+          <div>
+            <span class="meta-label">Selected Portfolio</span>
+            <h2>Recent Architectural Works</h2>
+          </div>
+          <div style="text-align: right;">
+            <a href="projects.html" class="btn btn-primary">View Full Index <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="card-grid card-grid-3">
+          <!-- Project 02 Card -->
+          <article class="arch-card" data-cursor="project" onclick="openProjectModal('concrete-courtyard')">
+            <div class="arch-card-media">
+              <img src="image/pexels-adrien-olichon-1257089-3137047.jpg" alt="Concrete Courtyard Bengaluru" loading="lazy">
+              <span class="arch-card-badge">Residential</span>
+            </div>
+            <div class="arch-card-body">
+              <div>
+                <div class="arch-card-meta-top">
+                  <span>PROJECT 02</span>
+                  <span>Bengaluru / 2026</span>
+                </div>
+                <h3 class="arch-card-title">Concrete Courtyard</h3>
+                <p class="arch-card-desc">Brutalist residence revolving around an introverted atrium and natural cooling pools.</p>
+              </div>
+              <div class="arch-card-footer">
+                <span class="btn-link">Case Study</span>
+                <span style="font-size: 0.75rem; color: var(--oxide); font-weight: 600;">4,650 SQ FT</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03 Card -->
+          <article class="arch-card" data-cursor="project" onclick="openProjectModal('north-pavilion')">
+            <div class="arch-card-media">
+              <img src="image/pexels-breaks-30832160.jpg" alt="North Pavilion Kochi" loading="lazy">
+              <span class="arch-card-badge">Cultural</span>
+            </div>
+            <div class="arch-card-body">
+              <div>
+                <div class="arch-card-meta-top">
+                  <span>PROJECT 03</span>
+                  <span>Kochi / 2026</span>
+                </div>
+                <h3 class="arch-card-title">North Pavilion</h3>
+                <p class="arch-card-desc">Civic exhibition hall framed by slender blackened steel portals and high-span glass.</p>
+              </div>
+              <div class="arch-card-footer">
+                <span class="btn-link">Case Study</span>
+                <span style="font-size: 0.75rem; color: var(--oxide); font-weight: 600;">8,400 SQ FT</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 04 Card -->
+          <article class="arch-card" data-cursor="project" onclick="openProjectModal('atelier-residence')">
+            <div class="arch-card-media">
+              <img src="image/pexels-felix-haumann-1938529-10143241.jpg" alt="Atelier Residence Pondicherry" loading="lazy">
+              <span class="arch-card-badge">Residential</span>
+            </div>
+            <div class="arch-card-body">
+              <div>
+                <div class="arch-card-meta-top">
+                  <span>PROJECT 04</span>
+                  <span>Pondicherry / 2025</span>
+                </div>
+                <h3 class="arch-card-title">Atelier Residence</h3>
+                <p class="arch-card-desc">Sculptor's workshop and dwelling organized along an extruded daylight axis.</p>
+              </div>
+              <div class="arch-card-footer">
+                <span class="btn-link">Case Study</span>
+                <span style="font-size: 0.75rem; color: var(--oxide); font-weight: 600;">3,800 SQ FT</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== JOURNAL PREVIEW ==================== -->
+    <section class="section section-paper-alt" id="journal-preview">
+      <div class="container">
+        <div class="header-grid" style="margin-bottom: 3.5rem;">
+          <div>
+            <span class="meta-label">Studio Journal</span>
+            <h2>Writings & Field Notes</h2>
+          </div>
+          <div style="text-align: right;">
+            <a href="journal.html" class="btn btn-secondary">Read Journal <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="card-grid card-grid-3">
+          <article class="arch-card" onclick="openArticleModal('weight-of-stone')">
+            <div class="arch-card-media">
+              <img src="image/pexels-ishahidsultan-7055821.jpg" alt="The Weight of Stone essay" loading="lazy">
+              <span class="arch-card-badge">Material</span>
+            </div>
+            <div class="arch-card-body">
+              <div>
+                <div class="arch-card-meta-top">
+                  <span>ESSAY</span>
+                  <span>OCT 2026</span>
+                </div>
+                <h3 class="arch-card-title">The Weight of Stone: Tactility in Modern Monoliths</h3>
+                <p class="arch-card-desc">Why digital architecture requires a renewed confrontation with raw geological mass.</p>
+              </div>
+              <div class="arch-card-footer">
+                <span class="btn-link">Read Essay</span>
+                <span style="font-size: 0.75rem; color: var(--oxide);">7 MIN READ</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="arch-card" onclick="openArticleModal('drawing-to-structure')">
+            <div class="arch-card-media">
+              <img src="image/pexels-sunny-li-2152532581-38532228.jpg" alt="Drawing to structure" loading="lazy">
+              <span class="arch-card-badge">Construction</span>
+            </div>
+            <div class="arch-card-body">
+              <div>
+                <div class="arch-card-meta-top">
+                  <span>FIELD NOTE</span>
+                  <span>SEP 2026</span>
+                </div>
+                <h3 class="arch-card-title">From Drawing to Structure: The Studio-Site Bridge</h3>
+                <p class="arch-card-desc">How closing the gap between drafting table and site pour ensures uncompromised craft.</p>
+              </div>
+              <div class="arch-card-footer">
+                <span class="btn-link">Read Field Note</span>
+                <span style="font-size: 0.75rem; color: var(--oxide);">5 MIN READ</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="arch-card" onclick="openArticleModal('space-made-visible')">
+            <div class="arch-card-media">
+              <img src="image/pexels-njeromin-12314551.jpg" alt="Light as Material" loading="lazy">
+              <span class="arch-card-badge">Architecture</span>
+            </div>
+            <div class="arch-card-body">
+              <div>
+                <div class="arch-card-meta-top">
+                  <span>RESEARCH</span>
+                  <span>AUG 2026</span>
+                </div>
+                <h3 class="arch-card-title">Light as Material: Carving Void in Dense Contexts</h3>
+                <p class="arch-card-desc">Exploring daylight not as incidental illumination, but as a primary structural element.</p>
+              </div>
+              <div class="arch-card-footer">
+                <span class="btn-link">Read Research</span>
+                <span style="font-size: 0.75rem; color: var(--oxide);">6 MIN READ</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FINAL CALL TO ACTION ==================== -->
+    <section class="section section-dark" id="cta-section">
+      <div class="container" style="text-align: center;">
+        <span class="meta-label no-line" style="color: var(--oxide-light); justify-content: center;">Start A Commission</span>
+        <h2 style="font-size: clamp(2.5rem, 6vw, 5rem); margin-bottom: 2rem; line-height: 1.1;">
+          LET'S BUILD SOMETHING<br><span style="color: var(--limestone); font-style: italic;">THAT LASTS.</span>
+        </h2>
+        <p class="lead-p" style="max-width: 620px; margin: 0 auto 2.5rem; color: rgba(244,241,234,0.75);">
+          We accept a selective number of private residential, cultural, and civic commissions each year.
+        </p>
+        <div>
+          <a href="contact.html" class="btn btn-oxide" style="padding: 1.1rem 3rem;">
+            START A CONVERSATION <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== SIGNATURE PROJECT MODAL ==================== -->
+  <div class="project-modal" id="project-modal" role="dialog" aria-modal="true" aria-label="Project Case Study">
+    <button class="modal-close-btn" aria-label="Close Project Modal"><i data-lucide="x"></i></button>
+    <div class="modal-content-wrapper">
+      <div class="meta-label modal-project-num" style="color: var(--oxide-light);">PROJECT 01</div>
+      <div class="modal-hero-grid">
+        <div>
+          <h2 class="modal-project-title">Project Title</h2>
+          <p class="lead-p modal-project-subtitle" style="color: var(--limestone); margin-bottom: 1.5rem;"></p>
+          <p class="modal-project-desc" style="color: rgba(244,241,234,0.8); line-height: 1.8;"></p>
+        </div>
+        <div class="modal-specs-table">
+          <!-- Populated by main.js -->
+        </div>
+      </div>
+
+      <!-- Swiper Slider in Modal -->
+      <div class="swiper modal-swiper-container">
+        <div class="swiper-wrapper modal-swiper-wrapper">
+          <!-- Populated by main.js -->
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next" style="color: var(--paper);"></div>
+        <div class="swiper-button-prev" style="color: var(--paper);"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== JOURNAL READER MODAL ==================== -->
+  <div class="project-modal" id="journal-modal" role="dialog" aria-modal="true" aria-label="Article Reader">
+    <button class="modal-close-btn journal-modal-close" aria-label="Close Article Modal"><i data-lucide="x"></i></button>
+    <div class="modal-content-wrapper" style="max-width: 920px;">
+      <div class="meta-label article-modal-cat" style="color: var(--oxide-light);">MATERIAL / OCT 2026</div>
+      <h2 class="article-modal-title" style="font-size: clamp(2.2rem, 4.5vw, 3.8rem); margin-bottom: 2rem;"></h2>
+      <div style="width: 100%; aspect-ratio: 16/9; overflow: hidden; margin-bottom: 2.5rem; background: var(--limestone);">
+        <img src="" alt="" class="article-modal-img" style="width:100%; height:100%; object-fit: cover;">
+      </div>
+      <div class="article-modal-body" style="font-size: 1.1rem; line-height: 1.8; color: rgba(244,241,234,0.85);">
+        <!-- Populated dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MONOLITHIC FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-statement-massive">
+        WE BUILD IDEAS <span class="oxide-text">INTO PLACE.</span>
+      </div>
+
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-title">FORM / MATERIAL / STRUCTURE</div>
+          <div class="meta-label no-line" style="margin-bottom: 0.75rem;">ARCHITECTURE & CONSTRUCTION PRACTICE</div>
+          <p class="footer-tagline">
+            Designing and constructing monolithic structures with raw material weight and tectonic clarity.
+          </p>
+          <div class="social-links-row" style="margin-top: 1.25rem;">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.334 1.357-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Practice</div>
+          <nav class="footer-links-list">
+            <a href="studio.html">Studio Manifesto</a>
+            <a href="architecture.html">Disciplines</a>
+            <a href="construction.html">Construction Craft</a>
+            <a href="studio.html#timeline">Timeline 2018–2027</a>
+          </nav>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Selected Index</div>
+          <nav class="footer-links-list">
+            <a href="projects.html">House of Limestone</a>
+            <a href="projects.html">Concrete Courtyard</a>
+            <a href="projects.html">North Pavilion</a>
+            <a href="projects.html">Civic Archive</a>
+          </nav>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Coordinates</div>
+          <div class="footer-links-list">
+            <span style="font-size: 0.85rem; color: rgba(244,241,234,0.7);">44 Harrington Road, Chennai</span>
+            <a href="mailto:studio@form-material-structure.com">studio@form-material-structure.com</a>
+            <a href="tel:+914428361099">+91 (044) 2836 1099</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div>&copy; 2027 ARCHITECTURE & CONSTRUCTION STUDIO. ALL RIGHTS RESERVED.</div>
+        <button class="footer-back-to-top" aria-label="Scroll back to top">
+          <span>BACK TO TOP</span>
+          <i data-lucide="arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Studio Custom Modules -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

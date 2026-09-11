@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio | Architecture & Construction Studio</title>
+  <meta name="description" content="A multidisciplinary architecture and construction practice operating at the intersection of material research, spatial rigor, and site execution.">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="header-transparent-dark">
+
+  <!-- ==================== GLOBAL NAVBAR ==================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="navbar-inner">
+        <a href="index.html" class="nav-brand-left" aria-label="Studio Home">
+          <span class="brand-dot"></span>
+          <span>STUDIO / ARCHITECTURE</span>
+        </a>
+
+        <div class="nav-center-statement">
+          FORM / MATERIAL / STRUCTURE
+        </div>
+
+        <div class="nav-right-desktop">
+          <nav class="nav-links-list" aria-label="Desktop Navigation">
+            <a href="projects.html" class="nav-link-item">Projects</a>
+            <a href="journal.html" class="nav-link-item">Journal</a>
+            <a href="contact.html" class="nav-link-item">Contact</a>
+          </nav>
+          <button class="menu-trigger" id="menu-trigger" aria-label="Open Navigation Menu" aria-expanded="false">
+            <span class="hamburger-lines">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== FULLSCREEN ARCHITECTURAL DRAWER ==================== -->
+  <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Navigation Menu">
+    <div class="drawer-nav-grid">
+      <div class="drawer-links-primary">
+        <a href="index.html" class="drawer-link"><span class="num">01</span><span>Home</span></a>
+        <a href="studio.html" class="drawer-link active"><span class="num">02</span><span>Studio</span></a>
+        <a href="architecture.html" class="drawer-link"><span class="num">03</span><span>Architecture</span></a>
+        <a href="construction.html" class="drawer-link"><span class="num">04</span><span>Construction</span></a>
+        <a href="projects.html" class="drawer-link"><span class="num">05</span><span>Projects</span></a>
+        <a href="journal.html" class="drawer-link"><span class="num">06</span><span>Journal</span></a>
+        <a href="contact.html" class="drawer-link"><span class="num">07</span><span>Contact</span></a>
+      </div>
+      <div class="drawer-secondary-info">
+        <div>
+          <div class="drawer-col-title">Studio Location</div>
+          <div class="drawer-address-block">
+            <p>44 Harrington Road, Chetpet</p>
+            <p>Chennai, Tamil Nadu 600031</p>
+            <p>India</p>
+          </div>
+        </div>
+        <div style="margin-top: 2rem;">
+          <div class="drawer-col-title">Direct Inquiries</div>
+          <div class="drawer-contact-block">
+            <a href="mailto:studio@form-material-structure.com">studio@form-material-structure.com</a>
+            <a href="tel:+914428361099">+91 (044) 2836 1099</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-bottom-bar">
+      <p>FORM. MATERIAL. STRUCTURE. — ARCHITECTURE & CONSTRUCTION PRACTICE</p>
+      <p>&copy; 2027 STUDIO. ALL RIGHTS RESERVED.</p>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- ==================== STUDIO HERO ==================== -->
+    <section class="hero-wrapper" id="studio-hero" style="min-height: 85vh;">
+      <div class="hero-bg-media">
+        <img src="image/pexels-quentin-ecrepont-1148362-3818947.jpg" alt="Architectural workshop and drawing studio" fetchpriority="high">
+      </div>
+      <div class="hero-overlay-dark"></div>
+      
+      <div class="container hero-content">
+        <span class="meta-label" style="color: var(--limestone-light);">Studio Profile</span>
+        <h1 class="hero-massive-title" style="font-size: clamp(2.8rem, 7.5vw, 6.5rem);">
+          A STUDIO BETWEEN<br>
+          <span class="accent-word">IDEA & MATERIAL.</span>
+        </h1>
+        <div class="hero-sub-row">
+          <p class="hero-sub-text">
+            Operating simultaneously as an architectural design atelier and a master builder collective in Chennai.
+          </p>
+          <div class="scroll-indicator">
+            <span>DISCOVER OUR PRAXIS</span>
+            <div class="scroll-indicator-line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== STUDIO MANIFESTO ==================== -->
+    <section class="section section-paper" id="studio-manifesto">
+      <div class="container container-narrow">
+        <span class="meta-label">The Manifesto</span>
+        <h2 style="font-size: clamp(2.2rem, 4.5vw, 3.8rem); margin-bottom: 2.5rem; line-height: 1.15;">
+          Architecture must withstand the erosion of time and trends through genuine physical substance.
+        </h2>
+        
+        <div style="display: flex; flex-direction: column; gap: 2rem;">
+          <p class="lead-p">
+            We was founded on a singular conviction: the contemporary division between the architect who dreams on screens and the contractor who executes on site is detrimental to architectural culture. When the designer does not feel the weight of stone or understand the curing chemistry of pozzolanic concrete, buildings lose their tectonic soul.
+          </p>
+          <p>
+            By unifying architectural research, computational structural engineering, and self-performed craftsmanship under one roof, our studio ensures that every line drawn on paper is realized with millimeter precision on the construction site. We embrace raw local aggregates, unadorned joinery, and passive thermodynamic principles.
+          </p>
+        </div>
+
+        <div class="arch-divider"></div>
+
+        <!-- Manifesto Pillars -->
+        <div class="card-grid card-grid-3">
+          <div>
+            <div class="meta-number">01</div>
+            <h4 style="margin-bottom: 0.75rem;">Material Integrity</h4>
+            <p style="font-size: 0.92rem; color: rgba(16,16,16,0.7);">
+              We refuse synthetic simulations. If a wall appears to be stone, it is load-bearing stone. If a beam is timber, it is solid seasoned teak or engineered glulam.
+            </p>
+          </div>
+          <div>
+            <div class="meta-number">02</div>
+            <h4 style="margin-bottom: 0.75rem;">Contextual Vernacular</h4>
+            <p style="font-size: 0.92rem; color: rgba(16,16,16,0.7);">
+              Every building emerges directly from its geological, climatic, and cultural terrain, utilizing passive courtyard cooling and natural solar orientations.
+            </p>
+          </div>
+          <div>
+            <div class="meta-number">03</div>
+            <h4 style="margin-bottom: 0.75rem;">Craft as Praxis</h4>
+            <p style="font-size: 0.92rem; color: rgba(16,16,16,0.7);">
+              Our construction division crafts 1:1 physical joinery mockups before site pours, cultivating close dialogue with master stonemasons and ironworkers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== STUDIO APPROACH 01-06 ==================== -->
+    <section class="section section-paper-alt" id="studio-approach">
+      <div class="container">
+        <div class="header-grid" style="margin-bottom: 3.5rem;">
+          <div>
+            <span class="meta-label">Design & Build Methodology</span>
+            <h2>Studio Sequence</h2>
+          </div>
+          <p class="header-desc">
+            From initial site observation to the final tactile refinement of hand-waxed surfaces, our workflow is rigorous and uninterrupted.
+          </p>
+        </div>
+
+        <div class="approach-sequence">
+          <div class="approach-step-card">
+            <div>
+              <div class="approach-step-num">01</div>
+              <h3 class="approach-step-title">Observe</h3>
+            </div>
+            <p class="approach-step-desc">
+              Analyzing microclimates, geological strata, sun paths, wind vectors, and the cultural memory of the terrain.
+            </p>
+          </div>
+
+          <div class="approach-step-card">
+            <div>
+              <div class="approach-step-num">02</div>
+              <h3 class="approach-step-title">Draw</h3>
+            </div>
+            <p class="approach-step-desc">
+              Expressing spatial ideas through hand charcoal sketches, proportion studies, and axonometric geometry.
+            </p>
+          </div>
+
+          <div class="approach-step-card">
+            <div>
+              <div class="approach-step-num">03</div>
+              <h3 class="approach-step-title">Model</h3>
+            </div>
+            <p class="approach-step-desc">
+              Constructing physical timber, plaster, and bronze study models to test light penetration and volumetric mass.
+            </p>
+          </div>
+
+          <div class="approach-step-card">
+            <div>
+              <div class="approach-step-num">04</div>
+              <h3 class="approach-step-title">Detail</h3>
+            </div>
+            <p class="approach-step-desc">
+              Engineering shadow gaps, thermal breaks, concealed drainage channels, and tectonic junction tolerances.
+            </p>
+          </div>
+
+          <div class="approach-step-card">
+            <div>
+              <div class="approach-step-num">05</div>
+              <h3 class="approach-step-title">Build</h3>
+            </div>
+            <p class="approach-step-desc">
+              Directing site operations with our dedicated construction team, ensuring strict material standards.
+            </p>
+          </div>
+
+          <div class="approach-step-card">
+            <div>
+              <div class="approach-step-num">06</div>
+              <h3 class="approach-step-title">Refine</h3>
+            </div>
+            <p class="approach-step-desc">
+              Hand-burnishing lime washes, testing acoustic damping, and observing how the structure settles into place.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== STUDIO TEAM ==================== -->
+    <section class="section section-paper" id="studio-people">
+      <div class="container">
+        <div class="header-grid" style="margin-bottom: 3.5rem;">
+          <div>
+            <span class="meta-label">Leadership</span>
+            <h2>Studio Principals</h2>
+          </div>
+          <p class="header-desc">
+            A cohesive collective of architectural theorists, structural craftsmen, and material scientists.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Member 1 -->
+          <div class="team-card">
+            <div class="team-media">
+              <img src="image/pexels-laura-paredis-1047081-12843084.jpg" alt="Aarav Ramanathan Principal Architect" loading="lazy">
+            </div>
+            <h3 class="team-name">Aarav Ramanathan</h3>
+            <div class="team-role">Principal Architect & Founder</div>
+            <p class="team-bio">M.Arch ETH Zürich. Specialist in monolithic thermal mass and bioclimatic courtyard typology.</p>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="team-card">
+            <div class="team-media">
+              <img src="image/pexels-felix-haumann-1938529-10143241.jpg" alt="Elena Varma Director of Construction" loading="lazy">
+            </div>
+            <h3 class="team-name">Elena Varma</h3>
+            <div class="team-role">Director of Construction Practice</div>
+            <p class="team-bio">Structural Engineer & Master Builder leading our self-performed site execution and fabrication unit.</p>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="team-card">
+            <div class="team-media">
+              <img src="image/pexels-ishahidsultan-7055821.jpg" alt="Kavya Sundaram Lead Material Researcher" loading="lazy">
+            </div>
+            <h3 class="team-name">Dr. Kavya Sundaram</h3>
+            <div class="team-role">Head of Material Science & Ecology</div>
+            <p class="team-bio">Leading our pozzolanic mineral trials, low-carbon binders, and lime wash respiration studies.</p>
+          </div>
+
+          <!-- Member 4 -->
+          <div class="team-card">
+            <div class="team-media">
+              <img src="image/pexels-mike-van-schoonderwalt-1884800-5504388.jpg" alt="Marcus Chen Head of Tectonic Detail" loading="lazy">
+            </div>
+            <h3 class="team-name">Marcus Chen</h3>
+            <div class="team-role">Head of Tectonic Detail & Timber</div>
+            <p class="team-bio">Craftsman and architect specializing in high-tolerance joinery, CNC glulam trusses, and patinated bronze.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== STUDIO TIMELINE ==================== -->
+    <section class="section section-dark" id="timeline">
+      <div class="container">
+        <div class="section-header">
+          <span class="meta-label" style="color: var(--oxide-light);">Evolution</span>
+          <h2>Studio Timeline (2018 — 2027)</h2>
+        </div>
+
+        <div class="timeline-horizontal-wrapper">
+          <div class="timeline-track">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2018</div>
+              <h3 class="timeline-title">Studio Founded</h3>
+              <p class="timeline-desc">Established in Chennai with a focus on residential architecture and raw material studies.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2020</div>
+              <h3 class="timeline-title">First Monolith Built</h3>
+              <p class="timeline-desc">Completion of our breakthrough stone house, demonstrating passive zero-energy cooling.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2023</div>
+              <h3 class="timeline-title">Integrated Construction</h3>
+              <p class="timeline-desc">Formed our internal construction practice to eliminate the design-build execution barrier.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2025</div>
+              <h3 class="timeline-title">Material Lab Launch</h3>
+              <p class="timeline-desc">Inauguration of our dedicated pozzolanic slag and timber research workshop.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2027</div>
+              <h3 class="timeline-title">Civic & Cultural Works</h3>
+              <p class="timeline-desc">Expanding commissions across South Asia focusing on civic archives, museums, and research pavilions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FINAL STATEMENT ==================== -->
+    <section class="section section-paper" style="text-align: center; padding: clamp(5rem, 9vw, 9rem) 0;">
+      <div class="container container-narrow">
+        <blockquote style="font-family: var(--font-serif); font-size: clamp(2rem, 4.5vw, 3.8rem); line-height: 1.25; margin-bottom: 2rem;">
+          “Every building begins as an idea, but becomes architecture through material.”
+        </blockquote>
+        <div class="meta-label no-line" style="justify-content: center;">
+          STUDIO AESTHETIC DIRECTIVE — CHENNAI
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== MONOLITHIC FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-statement-massive">
+        WE BUILD IDEAS <span class="oxide-text">INTO PLACE.</span>
+      </div>
+
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-title">FORM / MATERIAL / STRUCTURE</div>
+          <div class="meta-label no-line" style="margin-bottom: 0.75rem;">ARCHITECTURE & CONSTRUCTION PRACTICE</div>
+          <p class="footer-tagline">
+            Designing and constructing monolithic structures with raw material weight and tectonic clarity.
+          </p>
+          <div class="social-links-row" style="margin-top: 1.25rem;">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.334 1.357-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Practice</div>
+          <nav class="footer-links-list">
+            <a href="studio.html">Studio Manifesto</a>
+            <a href="architecture.html">Disciplines</a>
+            <a href="construction.html">Construction Craft</a>
+            <a href="studio.html#timeline">Timeline 2018–2027</a>
+          </nav>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Selected Index</div>
+          <nav class="footer-links-list">
+            <a href="projects.html">House of Limestone</a>
+            <a href="projects.html">Concrete Courtyard</a>
+            <a href="projects.html">North Pavilion</a>
+            <a href="projects.html">Civic Archive</a>
+          </nav>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Coordinates</div>
+          <div class="footer-links-list">
+            <span style="font-size: 0.85rem; color: rgba(244,241,234,0.7);">44 Harrington Road, Chennai</span>
+            <a href="mailto:studio@form-material-structure.com">studio@form-material-structure.com</a>
+            <a href="tel:+914428361099">+91 (044) 2836 1099</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div>&copy; 2027 ARCHITECTURE & CONSTRUCTION STUDIO. ALL RIGHTS RESERVED.</div>
+        <button class="footer-back-to-top" aria-label="Scroll back to top">
+          <span>BACK TO TOP</span>
+          <i data-lucide="arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="js/projects-data.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

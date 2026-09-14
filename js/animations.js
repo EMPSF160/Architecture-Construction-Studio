@@ -82,7 +82,7 @@ function initStudioAnimations() {
 
   // 4. Parallax on Featured Images
   if (typeof ScrollTrigger !== 'undefined') {
-    document.querySelectorAll('.featured-media img, .page-hero-bg img').forEach((img) => {
+    document.querySelectorAll('.featured-media img, .monolith-media img, .page-hero-bg img').forEach((img) => {
       gsap.to(img, {
         yPercent: 12,
         ease: 'none',

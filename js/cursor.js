@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Contextual Hover Listeners
     const initCursorHover = () => {
       // Projects
-      document.querySelectorAll('[data-cursor="project"], .arch-card, .featured-project-container').forEach(el => {
+      document.querySelectorAll('[data-cursor="project"], .arch-card, .featured-project-container, .monolith-case-card').forEach(el => {
         el.addEventListener('mouseenter', () => {
           document.body.classList.add('cursor-hover-project');
           label.textContent = 'VIEW';

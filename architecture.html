@@ -6,6 +6,11 @@
   <title>Architecture | Architecture & Construction Studio</title>
   <meta name="description" content="Spatial design, context, proportion, light, and material studies defining our architectural commissions.">
   
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
@@ -339,60 +344,151 @@
         <div class="section-header">
           <span class="meta-label" style="color: var(--oxide-light);">Major Case Studies</span>
           <h2>Selected Architectural Monoliths</h2>
+          <p class="header-desc" style="color: var(--limestone); margin-top: 0.75rem;">
+            Deep-dive structural monographs showcasing our integrated disciplines — from raw geological excavation to micro-precision steel and terracotta joinery.
+          </p>
         </div>
 
-        <div style="display: flex; flex-direction: column; gap: 4rem;">
-          <!-- Case Study 1 -->
-          <div class="featured-project-container" data-cursor="project" onclick="openProjectModal('north-pavilion')">
-            <div class="featured-media">
-              <img src="image/pexels-breaks-30832160.jpg" alt="North Pavilion Case Study">
-            </div>
-            <div class="featured-info">
-              <div class="featured-num">01</div>
-              <span class="meta-label" style="color: var(--oxide-light);">Case Study 01</span>
-              <h3 class="featured-title">North Pavilion</h3>
-              <div class="featured-tags">
-                <span class="featured-tag">Kochi, India</span>
-                <span class="featured-tag">2026</span>
-                <span class="featured-tag">8,400 SQ FT</span>
-                <span class="featured-tag">Oxidized Steel & Glass</span>
+        <div style="display: flex; flex-direction: column; gap: 4.5rem;">
+          <!-- Case Study 01: North Pavilion -->
+          <article class="monolith-case-card" data-cursor="project" onclick="openProjectModal('north-pavilion')">
+            <div class="monolith-media">
+              <img src="image/pexels-breaks-30832160.jpg" alt="North Pavilion Case Study" loading="lazy">
+              <div class="monolith-media-top">
+                <span class="monolith-pill-badge">
+                  <span class="monolith-pill-dot"></span> Cultural Monolith
+                </span>
+                <span class="monolith-coord-badge">09°58′N 76°17′E</span>
               </div>
-              <p class="header-desc" style="margin-bottom: 2rem;">
-                A civic exhibition hall featuring pre-engineered weathering steel box portals, low-iron structural glass fins, and polished granite datums.
-              </p>
-              <div>
-                <button class="btn btn-oxide" onclick="event.stopPropagation(); openProjectModal('north-pavilion')">
-                  View Case Study <i data-lucide="arrow-up-right"></i>
-                </button>
+              <div class="monolith-media-bottom">
+                <span class="monolith-metric-item">SCALE: <strong>8,400 SQ FT</strong></span>
+                <span class="monolith-metric-sep">/</span>
+                <span class="monolith-metric-item">YEAR: <strong>2026</strong></span>
+                <span class="monolith-metric-sep">/</span>
+                <span class="monolith-metric-item">LEED: <strong>PLATINUM</strong></span>
               </div>
             </div>
-          </div>
+            <div class="monolith-info">
+              <div style="width: 100%;">
+                <div class="monolith-header-row">
+                  <span class="monolith-num">01</span>
+                  <div class="monolith-num-track"></div>
+                  <span class="monolith-meta-tag">CASE STUDY 01</span>
+                </div>
+                <h3 class="monolith-title">North Pavilion</h3>
+                <div class="monolith-subtitle">Civic Exhibition Hall & Maritime Archive</div>
 
-          <!-- Case Study 2 -->
-          <div class="featured-project-container" data-cursor="project" onclick="openProjectModal('civic-archive')">
-            <div class="featured-media">
-              <img src="image/pexels-laura-paredis-1047081-12843084.jpg" alt="Civic Archive Case Study">
-            </div>
-            <div class="featured-info">
-              <div class="featured-num">02</div>
-              <span class="meta-label" style="color: var(--oxide-light);">Case Study 02</span>
-              <h3 class="featured-title">Civic Archive & Library</h3>
-              <div class="featured-tags">
-                <span class="featured-tag">Madurai, India</span>
-                <span class="featured-tag">2024</span>
-                <span class="featured-tag">14,200 SQ FT</span>
-                <span class="featured-tag">Terracotta & Concrete</span>
+                <div class="monolith-specs-grid">
+                  <div class="monolith-spec-cell">
+                    <span class="monolith-spec-label">Location</span>
+                    <span class="monolith-spec-val">Kochi, Kerala, India</span>
+                  </div>
+                  <div class="monolith-spec-cell">
+                    <span class="monolith-spec-label">Timeline</span>
+                    <span class="monolith-spec-val">2026 Commission</span>
+                  </div>
+                  <div class="monolith-spec-cell">
+                    <span class="monolith-spec-label">Enclosed Area</span>
+                    <span class="monolith-spec-val">8,400 SQ FT</span>
+                  </div>
+                  <div class="monolith-spec-cell">
+                    <span class="monolith-spec-label">Materiality</span>
+                    <span class="monolith-spec-val">Oxidized Steel & Glass</span>
+                  </div>
+                </div>
+
+                <p class="monolith-desc">
+                  A civic exhibition hall featuring pre-engineered weathering steel box portals, low-iron structural glass fins, and polished granite datums engineered to withstand coastal monsoon humidity with zero exposed fasteners.
+                </p>
+
+                <ul class="monolith-highlights">
+                  <li><i data-lucide="check"></i> Pre-engineered weathering steel box portals with CNC joints</li>
+                  <li><i data-lucide="check"></i> Low-iron structural glass fins with concealed point-support hardware</li>
+                  <li><i data-lucide="check"></i> Monolithic riverbed granite datum with integrated sub-floor cooling</li>
+                </ul>
               </div>
-              <p class="header-desc" style="margin-bottom: 2rem;">
-                A municipal sanctuary for ancient historical manuscripts with porous extruded terracotta baguettes and coffered concrete vaults.
-              </p>
-              <div>
-                <button class="btn btn-oxide" onclick="event.stopPropagation(); openProjectModal('civic-archive')">
-                  View Case Study <i data-lucide="arrow-up-right"></i>
+
+              <div class="monolith-action-row">
+                <button class="monolith-case-btn" onclick="event.stopPropagation(); openProjectModal('north-pavilion')">
+                  <span>View Case Study</span>
+                  <i data-lucide="arrow-up-right"></i>
                 </button>
+                <span class="monolith-hint">
+                  <i data-lucide="file-text"></i> Architectural Drawings & Specs Included
+                </span>
               </div>
             </div>
-          </div>
+          </article>
+
+          <!-- Case Study 02: Civic Archive & Library -->
+          <article class="monolith-case-card monolith-case-card--reverse" data-cursor="project" onclick="openProjectModal('civic-archive')">
+            <div class="monolith-media">
+              <img src="image/pexels-laura-paredis-1047081-12843084.jpg" alt="Civic Archive Case Study" loading="lazy">
+              <div class="monolith-media-top">
+                <span class="monolith-pill-badge">
+                  <span class="monolith-pill-dot"></span> Municipal Sanctuary
+                </span>
+                <span class="monolith-coord-badge">09°55′N 78°07′E</span>
+              </div>
+              <div class="monolith-media-bottom">
+                <span class="monolith-metric-item">SCALE: <strong>14,200 SQ FT</strong></span>
+                <span class="monolith-metric-sep">/</span>
+                <span class="monolith-metric-item">YEAR: <strong>2024</strong></span>
+                <span class="monolith-metric-sep">/</span>
+                <span class="monolith-metric-item">VAULTS: <strong>COFFERED RC</strong></span>
+              </div>
+            </div>
+            <div class="monolith-info">
+              <div style="width: 100%;">
+                <div class="monolith-header-row">
+                  <span class="monolith-num">02</span>
+                  <div class="monolith-num-track"></div>
+                  <span class="monolith-meta-tag">CASE STUDY 02</span>
+                </div>
+                <h3 class="monolith-title">Civic Archive & Library</h3>
+                <div class="monolith-subtitle">Sanctuary for Ancient Manuscripts & Public Reading Cloister</div>
+
+                <div class="monolith-specs-grid">
+                  <div class="monolith-spec-cell">
+                    <span class="monolith-spec-label">Location</span>
+                    <span class="monolith-spec-val">Madurai, Tamil Nadu, India</span>
+                  </div>
+                  <div class="monolith-spec-cell">
+                    <span class="monolith-spec-label">Timeline</span>
+                    <span class="monolith-spec-val">2024 Completed</span>
+                  </div>
+                  <div class="monolith-spec-cell">
+                    <span class="monolith-spec-label">Enclosed Area</span>
+                    <span class="monolith-spec-val">14,200 SQ FT</span>
+                  </div>
+                  <div class="monolith-spec-cell">
+                    <span class="monolith-spec-label">Materiality</span>
+                    <span class="monolith-spec-val">Terracotta & Concrete</span>
+                  </div>
+                </div>
+
+                <p class="monolith-desc">
+                  A municipal sanctuary for ancient historical manuscripts with porous extruded terracotta baguettes, coffered fair-face concrete vaults, and passive microclimate cooling courts designed for permanent archival preservation.
+                </p>
+
+                <ul class="monolith-highlights">
+                  <li><i data-lucide="check"></i> Porous extruded terracotta solar baguettes with high thermal inertia</li>
+                  <li><i data-lucide="check"></i> Coffered fair-face concrete vaults engineered for acoustic stillness</li>
+                  <li><i data-lucide="check"></i> Micro-climate courtyard system with active rainwater cooling cisterns</li>
+                </ul>
+              </div>
+
+              <div class="monolith-action-row">
+                <button class="monolith-case-btn" onclick="event.stopPropagation(); openProjectModal('civic-archive')">
+                  <span>View Case Study</span>
+                  <i data-lucide="arrow-up-right"></i>
+                </button>
+                <span class="monolith-hint">
+                  <i data-lucide="file-text"></i> Architectural Drawings & Specs Included
+                </span>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>

@@ -269,12 +269,12 @@ button, input, textarea, select {
 
 .header-desc {
   font-size: clamp(1rem, 1.2vw, 1.15rem);
-  color: rgba(16, 16, 16, 0.75);
+  color: rgba(16, 16, 16, 0.88);
   max-width: 540px;
 }
 
 .section-dark .header-desc {
-  color: rgba(244, 241, 234, 0.75);
+  color: rgba(244, 241, 234, 0.92);
 }
 
 /* --- BUTTONS & ARCHITECTURAL CTAS --- */
@@ -992,7 +992,7 @@ button, input, textarea, select {
 
 .arch-card-desc {
   font-size: 0.92rem;
-  color: rgba(16, 16, 16, 0.7);
+  color: rgba(16, 16, 16, 0.88);
   line-height: 1.6;
   margin-bottom: 1.25rem;
   flex-grow: 1;
@@ -1000,22 +1000,24 @@ button, input, textarea, select {
   max-width: 440px;
 }
 
-.section-dark .arch-card-desc {
-  color: rgba(244, 241, 234, 0.7);
+.section-dark .arch-card-desc,
+.arch-card--dark .arch-card-desc {
+  color: rgba(244, 241, 234, 0.92);
 }
 
 .arch-card-footer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
+  justify-content: space-between;
+  gap: 1.25rem;
   border-top: 1px solid var(--border-subtle);
   padding-top: 1rem;
   margin-top: auto;
   width: 100%;
 }
 
-.section-dark .arch-card-footer {
+.section-dark .arch-card-footer,
+.arch-card--dark .arch-card-footer {
   border-top-color: var(--border-subtle-dark);
 }
 
@@ -1274,24 +1276,24 @@ button, input, textarea, select {
 
 .monolith-spec-label {
   font-size: 0.68rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(244, 241, 234, 0.5);
+  color: rgba(244, 241, 234, 0.78);
 }
 
 .monolith-spec-val {
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   font-weight: 500;
-  color: var(--paper);
+  color: #ffffff;
   letter-spacing: 0.02em;
 }
 
 .monolith-desc,
 .featured-desc {
-  font-size: 0.92rem;
+  font-size: 0.94rem;
   line-height: 1.7;
-  color: rgba(244, 241, 234, 0.82);
+  color: rgba(244, 241, 234, 0.92);
   margin-bottom: 1.25rem;
 }
 
@@ -1307,8 +1309,8 @@ button, input, textarea, select {
 }
 
 .monolith-highlights li {
-  font-size: 0.82rem;
-  color: rgba(244, 241, 234, 0.78);
+  font-size: 0.84rem;
+  color: rgba(244, 241, 234, 0.92);
   display: flex;
   align-items: center;
   gap: 0.65rem;
@@ -1369,10 +1371,10 @@ button, input, textarea, select {
 }
 
 .monolith-hint {
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(244, 241, 234, 0.45);
+  color: rgba(244, 241, 234, 0.78);
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
@@ -1446,7 +1448,7 @@ button, input, textarea, select {
 
 .philosophy-desc {
   font-size: 0.98rem;
-  color: rgba(16, 16, 16, 0.75);
+  color: rgba(16, 16, 16, 0.88);
   line-height: 1.7;
   max-width: 360px;
 }
@@ -1526,8 +1528,8 @@ button, input, textarea, select {
 }
 
 .material-specs {
-  font-size: 0.85rem;
-  color: rgba(244, 241, 234, 0.8);
+  font-size: 0.88rem;
+  color: rgba(244, 241, 234, 0.95);
   line-height: 1.5;
   opacity: 0;
   transform: translateY(10px);
@@ -1571,12 +1573,12 @@ button, input, textarea, select {
 
 .approach-step-desc {
   font-size: 0.92rem;
-  color: rgba(16, 16, 16, 0.7);
+  color: rgba(16, 16, 16, 0.88);
   max-width: 340px;
 }
 
 .section-dark .approach-step-desc {
-  color: rgba(244, 241, 234, 0.7);
+  color: rgba(244, 241, 234, 0.92);
 }
 
 /* --- HORIZONTAL STUDIO TIMELINE --- */
@@ -1645,12 +1647,13 @@ button, input, textarea, select {
 }
 
 .timeline-desc {
-  font-size: 0.88rem;
-  color: rgba(16, 16, 16, 0.65);
+  font-size: 0.9rem;
+  color: rgba(16, 16, 16, 0.85);
+  line-height: 1.55;
 }
 
 .section-dark .timeline-desc {
-  color: rgba(244, 241, 234, 0.65);
+  color: rgba(244, 241, 234, 0.92);
 }
 
 /* --- TEAM GRID --- */
@@ -1705,9 +1708,14 @@ button, input, textarea, select {
 }
 
 .team-bio {
-  font-size: 0.85rem;
-  color: rgba(16, 16, 16, 0.65);
+  font-size: 0.88rem;
+  color: rgba(16, 16, 16, 0.85);
+  line-height: 1.5;
   max-width: 280px;
+}
+
+.section-dark .team-bio {
+  color: rgba(244, 241, 234, 0.92);
 }
 
 /* --- ARCHITECTURE PROCESS LINE ANIMATION --- */
@@ -1746,8 +1754,13 @@ button, input, textarea, select {
 }
 
 .process-step-desc {
-  font-size: 0.82rem;
-  color: rgba(16, 16, 16, 0.65);
+  font-size: 0.85rem;
+  color: rgba(16, 16, 16, 0.88);
+  line-height: 1.5;
+}
+
+.section-dark .process-step-desc {
+  color: rgba(244, 241, 234, 0.92);
 }
 
 /* --- THREE.JS CONTAINER --- */
@@ -1797,7 +1810,7 @@ button, input, textarea, select {
 
 .three-desc {
   font-size: 0.95rem;
-  color: rgba(244, 241, 234, 0.75);
+  color: rgba(244, 241, 234, 0.92);
 }
 
 /* --- INTERACTIVE PROJECT MODAL --- */
@@ -2062,7 +2075,7 @@ button, input, textarea, select {
 /* Minimal Architectural Map Card & Embedded Map */
 .map-visual-box {
   width: 100%;
-  height: 320px;
+  height: 340px;
   background-color: var(--limestone);
   position: relative;
   overflow: hidden;
@@ -2080,7 +2093,90 @@ button, input, textarea, select {
 }
 
 .map-visual-box:hover iframe {
-  filter: grayscale(40%) invert(0%) contrast(100%);
+  filter: grayscale(30%) invert(0%) contrast(100%);
+}
+
+.map-social-overlay {
+  position: absolute;
+  bottom: 0.85rem;
+  left: 0.85rem;
+  right: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(16, 16, 16, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--border-subtle-dark);
+  z-index: 5;
+  pointer-events: auto;
+  transition: background var(--transition-fast);
+}
+
+.map-social-overlay .map-social-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--limestone-light);
+  font-weight: 600;
+}
+
+.map-social-overlay .map-social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.map-social-overlay .social-icon-btn {
+  width: 32px;
+  height: 32px;
+  border-color: rgba(244, 241, 234, 0.25);
+  color: var(--paper);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.map-social-overlay .social-icon-btn:hover {
+  background-color: var(--oxide);
+  border-color: var(--oxide);
+  color: #ffffff;
+}
+
+/* High Contrast Highlighted Text & Opportunity Badges */
+.opportunity-tag,
+.badge-highlight,
+.highlight-text,
+.tag-highlight {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #ffffff !important;
+  background: rgba(141, 88, 69, 0.35) !important;
+  border: 1px solid var(--oxide-light) !important;
+}
+
+.opportunity-card,
+.career-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.opportunity-footer,
+.career-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle-dark);
+  width: 100%;
 }
 
 /* --- MONOLITHIC ARCHITECTURAL FOOTER --- */

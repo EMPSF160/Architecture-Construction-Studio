@@ -10,9 +10,24 @@ html, body {
   width: 100%;
 }
 
-/* --- TABLET & BELOW: 1024PX AND LESS STRICT LOGO + HAMBURGER RULE --- */
-@media (max-width: 1024px) {
-  /* Center Statement and Desktop navigation links hidden */
+/* --- TABLET & LAPTOP (1200PX, 1024PX AND BELOW): STRICT CLEAN NAVBAR + HAMBURGER RULE --- */
+@media (max-width: 1200px) {
+  /* Prevent horizontal navbar overflow */
+  .site-header {
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow: hidden !important;
+  }
+
+  .navbar-inner {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  /* Center Statement and Desktop navigation links hidden to avoid cramming/overflow */
   .nav-center-statement {
     display: none !important;
   }

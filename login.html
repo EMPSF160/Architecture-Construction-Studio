@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Portal Login | Architecture & Construction Studio</title>
+  <meta name="description" content="Access your private architectural commission portal, project blueprints, and real-time site telemetry.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="header-transparent-dark">
+
+  <!-- ==================== GLOBAL NAVBAR ==================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="navbar-inner">
+        <!-- Brand Left -->
+        <a href="index.html" class="nav-brand-left" aria-label="Studio Home">
+          <span class="brand-dot"></span>
+          <span>STUDIO / ARCHITECTURE</span>
+        </a>
+
+        <!-- Center Editorial Statement -->
+        <div class="nav-center-statement">
+          FORM / MATERIAL / STRUCTURE
+        </div>
+
+        <!-- Desktop Right Nav & Hamburger Trigger -->
+        <div class="nav-right-desktop">
+          <nav class="nav-links-list" aria-label="Desktop Navigation">
+            <a href="projects.html" class="nav-link-item">Projects</a>
+            <a href="journal.html" class="nav-link-item">Journal</a>
+            <a href="contact.html" class="nav-link-item">Contact</a>
+            <a href="login.html" class="nav-link-item active" style="color: var(--oxide);">Portal</a>
+          </nav>
+          <button class="menu-trigger" id="menu-trigger" aria-label="Open Navigation Menu" aria-expanded="false">
+            <span class="hamburger-lines">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== FULLSCREEN ARCHITECTURAL DRAWER ==================== -->
+  <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Navigation Menu">
+    <div class="drawer-nav-grid">
+      <div class="drawer-links-primary">
+        <a href="index.html" class="drawer-link"><span class="num">01</span><span>Home</span></a>
+        <a href="studio.html" class="drawer-link"><span class="num">02</span><span>Studio</span></a>
+        <a href="architecture.html" class="drawer-link"><span class="num">03</span><span>Architecture</span></a>
+        <a href="construction.html" class="drawer-link"><span class="num">04</span><span>Construction</span></a>
+        <a href="projects.html" class="drawer-link"><span class="num">05</span><span>Projects</span></a>
+        <a href="journal.html" class="drawer-link"><span class="num">06</span><span>Journal</span></a>
+        <a href="contact.html" class="drawer-link"><span class="num">07</span><span>Contact</span></a>
+        <a href="login.html" class="drawer-link active"><span class="num">08</span><span>Client Portal</span></a>
+      </div>
+      <div class="drawer-secondary-info">
+        <div>
+          <div class="drawer-col-title">Studio Location</div>
+          <div class="drawer-address-block">
+            <p>44 Harrington Road, Chetpet</p>
+            <p>Chennai, Tamil Nadu 600031</p>
+            <p>India</p>
+          </div>
+        </div>
+        <div style="margin-top: 2rem;">
+          <div class="drawer-col-title">Direct Inquiries</div>
+          <div class="drawer-contact-block">
+            <a href="mailto:studio@form-material-structure.com">studio@form-material-structure.com</a>
+            <a href="tel:+914428361099">+91 (044) 2836 1099</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-bottom-bar">
+      <p>FORM. MATERIAL. STRUCTURE. — ARCHITECTURE & CONSTRUCTION PRACTICE</p>
+      <p>&copy; 2027 STUDIO. ALL RIGHTS RESERVED.</p>
+    </div>
+  </div>
+
+  <main id="main-content" style="padding-top: calc(var(--header-height) + clamp(2rem, 5vh, 4rem)); padding-bottom: 5rem; min-height: 90vh; display: flex; align-items: center;">
+    <div class="container container-narrow">
+      <div class="auth-card-wrapper" style="max-width: 540px; margin: 0 auto; background-color: var(--paper-card); border: 1px solid var(--border-subtle); padding: clamp(2rem, 4.5vw, 3.5rem);">
+        
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <span class="meta-label no-line" style="justify-content: center; margin-bottom: 0.5rem; color: var(--oxide);">COMMISSION ACCESS</span>
+          <h1 style="font-size: clamp(2rem, 3.5vw, 2.75rem); margin-bottom: 0.75rem;">Client Portal</h1>
+          <p style="font-size: 0.95rem; color: rgba(16,16,16,0.75);">Access your project blueprints, live site logs, and contract milestones.</p>
+        </div>
+
+        <!-- Social Authentication Links -->
+        <div class="auth-social-section" style="margin-bottom: 2rem;">
+          <div class="auth-social-row" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem;">
+            <a href="#" class="auth-social-btn" aria-label="Sign in with Google" style="display: flex; align-items: center; justify-content: center; gap: 0.65rem; padding: 0.75rem 1rem; border: 1px solid var(--border-subtle); background: #ffffff; font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; transition: all var(--transition-fast);">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#EA4335" d="M12 5c1.7 0 3 .6 4 1.5l3-3C17.2 1.8 14.8 1 12 1 7.4 1 3.5 3.6 1.6 7.4l3.7 2.9C6.2 7.3 8.9 5 12 5z"/><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.5c-.3 1.5-1.1 2.8-2.4 3.7l3.7 2.9c2.2-2 3.7-5 3.7-8.8z"/><path fill="#FBBC05" d="M5.3 14.7c-.2-.7-.4-1.5-.4-2.4s.2-1.7.4-2.4L1.6 7c-.9 1.8-1.6 3.8-1.6 5s.7 3.2 1.6 5l3.7-2.3z"/><path fill="#34A853" d="M12 23c3.2 0 6-1.1 8-3l-3.7-2.9c-1.1.7-2.5 1.2-4.3 1.2-3.1 0-5.8-2.3-6.7-5.3L1.6 15.3C3.5 19.4 7.4 23 12 23z"/></svg>
+              <span>Google</span>
+            </a>
+            <a href="#" class="auth-social-btn" aria-label="Sign in with Apple" style="display: flex; align-items: center; justify-content: center; gap: 0.65rem; padding: 0.75rem 1rem; border: 1px solid var(--border-subtle); background: #ffffff; font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; transition: all var(--transition-fast);">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 1.01-2.85-.92.04-2.03.62-2.69 1.39-.58.67-1.09 1.74-.95 2.78 1.03.08 2.01-.57 2.63-1.32z"/></svg>
+              <span>Apple</span>
+            </a>
+            <a href="#" class="auth-social-btn" aria-label="Sign in with GitHub" style="display: flex; align-items: center; justify-content: center; gap: 0.65rem; padding: 0.75rem 1rem; border: 1px solid var(--border-subtle); background: #ffffff; font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; transition: all var(--transition-fast);">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="#" class="auth-social-btn" aria-label="Sign in with X" style="display: flex; align-items: center; justify-content: center; gap: 0.65rem; padding: 0.75rem 1rem; border: 1px solid var(--border-subtle); background: #ffffff; font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; transition: all var(--transition-fast);">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <span>X (Twitter)</span>
+            </a>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 1rem; margin-top: 1.75rem;">
+            <div style="flex-grow: 1; height: 1px; background: var(--border-subtle);"></div>
+            <span style="font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(16,16,16,0.5);">or studio credentials</span>
+            <div style="flex-grow: 1; height: 1px; background: var(--border-subtle);"></div>
+          </div>
+        </div>
+
+        <!-- Login Form with Eye Icon Password Field -->
+        <form class="arch-form" id="login-form">
+          <div class="form-group">
+            <label for="login-email" class="form-label">Client Email *</label>
+            <input type="email" id="login-email" name="email" class="form-input" placeholder="client@domain.com" required autocomplete="username">
+          </div>
+
+          <div class="form-group password-group">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <label for="login-password" class="form-label">Password *</label>
+              <a href="#" style="font-size: 0.75rem; color: var(--oxide); letter-spacing: 0.05em;">Forgot Key?</a>
+            </div>
+            <div class="password-input-wrapper" style="position: relative; width: 100%;">
+              <input type="password" id="login-password" name="password" class="form-input" placeholder="••••••••" required autocomplete="current-password" style="padding-right: 3rem;">
+              <button type="button" class="password-toggle-btn" aria-label="Toggle password visibility" onclick="togglePasswordVisibility('login-password', this)" style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--oxide); cursor: pointer; padding: 0.25rem;">
+                <i data-lucide="eye" style="width: 18px; height: 18px;"></i>
+              </button>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin: 0.25rem 0;">
+            <input type="checkbox" id="remember" name="remember" style="accent-color: var(--oxide);">
+            <label for="remember" style="font-size: 0.85rem; color: rgba(16,16,16,0.8); cursor: pointer;">Remember this terminal</label>
+          </div>
+
+          <button type="submit" class="btn btn-oxide" style="width: 100%; padding: 1.1rem; margin-top: 0.5rem;">
+            AUTHENTICATE & ENTER PORTAL <i data-lucide="arrow-right"></i>
+          </button>
+
+          <div style="text-align: center; margin-top: 1.5rem; font-size: 0.88rem; color: rgba(16,16,16,0.75);">
+            New commission client? <a href="register.html" style="color: var(--oxide); font-weight: 600;">Request Credentials →</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==================== MONOLITHIC FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom-row">
+        <div>&copy; 2027 ARCHITECTURE & CONSTRUCTION STUDIO. ALL RIGHTS RESERVED.</div>
+        <div class="social-links-row" style="margin: 0;">
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="X (Twitter)">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    lucide.createIcons();
+    function togglePasswordVisibility(inputId, btn) {
+      const input = document.getElementById(inputId);
+      if (!input) return;
+      const isPassword = input.type === 'password';
+      input.type = isPassword ? 'text' : 'password';
+      const icon = btn.querySelector('i');
+      if (icon) {
+        icon.setAttribute('data-lucide', isPassword ? 'eye-off' : 'eye');
+        if (window.lucide) lucide.createIcons();
+      }
+    }
+  </script>
+</body>
+</html>
